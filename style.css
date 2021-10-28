@@ -33,6 +33,7 @@ header {
     color: #00285f;
     min-height: 50px;
     text-align: center;
+    margin: 2px;
 }
 
 .cabecalho .cabecalho-informacoes {
@@ -94,6 +95,7 @@ main {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     padding: 10px;
 }
 
@@ -113,25 +115,23 @@ main {
     bottom: 20%;
 }
 
-.principal-informacoes .principal-texto {
-    bottom: 30%;
-    left: 10%;
-}
-
 .principal-informacoes .principal-texto h2 {
     color: #00285f;
     margin-bottom: 20px;
-    text-align: left;
     transform: translateX(-20px);
     transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
 }
 
 .principal-informacoes .principal-texto p {
     max-width: 500px;
     color: #00285f;
-    text-align: left;
+    margin-bottom: 20px;
     transform: translateX(-20px);
     transition: transform 0.4s;
+    display: flex;
+    justify-content: center;
 }
 
 .principal-botao button {
@@ -139,7 +139,8 @@ main {
     background: transparent;
     padding: 8px 40px;
     cursor: pointer;
-    margin-left: 30px;
+    display: flex;
+    justify-content: center;
     color: #00285f;
     font-weight: bold;
     border-radius: 4px;
