@@ -50,13 +50,6 @@ header {
     padding: 10px;
 }
 
-.cabecalho-imagem img {
-    width: 10%;
-    position: absolute;
-    right: 10%;
-    bottom: 10%;
-}
-
 .cabecalho-informacoes .cabecalho-texto {
     position: absolute;
     bottom: 30%;
@@ -65,18 +58,12 @@ header {
 
 .cabecalho-informacoes .informacoes-texto h2 {
     color: #00285f;
-    margin-bottom: 20px;
-    text-align: left;
-    line-height: 1.5;
     transform: translateX(-20px);
     transition: transform 0.5s;
 }
 
 .cabecalho-informacoes .informacoes-texto p {
-    max-width: 500px;
     color: #00285f;
-    text-align: left;
-    line-height: 1.5;
     transform: translateX(-20px);
     transition: transform 0.4s;
 }
@@ -109,7 +96,7 @@ main {
 }
 
 .principal-imagem img {
-    width: 10%;
+    width: 15%;
     position: absolute;
     right: 10%;
     bottom: 20%;
@@ -125,7 +112,6 @@ main {
 }
 
 .principal-informacoes .principal-texto p {
-    max-width: 500px;
     color: #00285f;
     margin-bottom: 20px;
     transform: translateX(-20px);
@@ -134,14 +120,17 @@ main {
     justify-content: center;
 }
 
+.principal-botao {
+    display: flex;
+    justify-content: center;
+}
+
 .principal-botao button {
+    color: #00285f;
     border: 1px solid #00285f;
     background: transparent;
     padding: 8px 40px;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    color: #00285f;
     font-weight: bold;
     border-radius: 4px;
 }
