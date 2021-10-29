@@ -1,10 +1,28 @@
-const btnTexto = document.querySelector("#botao-humor"); // Captura o botão no DOM pelo id
+const botaoHumor = document.querySelector("#botao-humor"); // Captura o botão no DOM pelo id
+const nomeHumor = document.querySelector('#nome-do-humor');
+const descricaoHumor = document.querySelector('#descricao-do-humor');
+const imagemHumor = document.querySelector('#imagem-do-humor');
 
-btnTexto.addEventListener("click", function () { // Adiciona um evento de click no botão capturado e assim que for clicado, executa a função.
-  const tagH1 = document.createElement("h1"); // Cria uma tag h1 e adiciona a let tagH1
-  const h1Text = document.createTextNode("Texto criado no JS"); // Cria um texto e adiciona a let h1Text
-
-  tagH1.appendChild(h1Text); // Adiciona a tag H1 o texto criado acima
-
-  document.body.appendChild(tagH1); // Adiciona ao body a h1 criada, com seu texto.
+botaoHumor.addEventListener("click", function () { // Adiciona um evento de click no botão capturado e assim que for clicado, executa a função.
+  if (botaoHumor.value == `inicial`) {
+    imagemHumor.src = `medo.png`
+    nomeHumor.innerText = `Medo`
+    descricaoHumor.innerText = `Vai com medo mesmo!`
+    botaoHumor.value = `medo`
+  } else if (botaoHumor.value == `medo`) {
+    imagemHumor.src = `nojinho.png`
+    nomeHumor.innerText = `Nojinho`
+    descricaoHumor.innerText = `ULE! tanana... ULE!`
+    botaoHumor.value = `nojinho`
+  } else if (botaoHumor.value == `nojinho`) {
+    imagemHumor.src = `raiva.png`
+    nomeHumor.innerText = `Raiva`
+    descricaoHumor.innerText = `Que ódiooooooooo!`
+    botaoHumor.value = `raiva`
+  } else {
+    imagemHumor.src = `tristeza.png`
+    nomeHumor.innerText = `Tristeza`
+    descricaoHumor.innerText = `Nenhum sentimento é para sempre... Nenhum!`
+    botaoHumor.value = `inicial`
+  }
 });
